@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Mitr:wght@200;300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Prociono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+}
+
+.all-content{
+    background: #fffbf5;
+}
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar{
+    width: 10px;
+    height: 100px;
+}
+/*navbar start */
+#navbar{
+    background-color: #fff;
+}
+#logo img{
+    border-radius: 100px;
+    width: 60px;
+    margin-left: 40px;
+}
+.navbar-nav{
+    margin-left: 50px;
+}
+.nav-item .nav-link{
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.nav-item .nav-link:hover {
+    background: #006400;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#navbar form button{
+    background:#006400;
+    color: whitesmoke;
+    border: 1px solid white;
+}
+/*navbar end */
+
+/*home section start */
+#home {
+    align-items: center;      
+    width: 100%;             
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./img/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+#home .content{
+    padding-top: 100px;
+    margin-left: 56px;
+}
+#home .content h3{
+    font-size: 80px;
+    color: #ffffff;
+}
+#home .content p{
+    margin-top: 10px;
+    font-size: 40px;
+    color: #ffffff;
+}
+#btn{
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer
+}
+#btn:hover{
+    background: #006400;
+    color: white;
+}
+/*home section end */
+
+/* about section start */
+#about{
+    width: 100%;
+    height: 100vh;
+}
+#about .container{
+    padding-top: 50px;
+}
+.heading{
+    text-align: center;
+    margin: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading span{
+    color: #006400;
+}
+#about .card{
+    border-radius: 10px;
+}
+#about .card img{
+    border-radius: 10px;
+    height: 600px;
+}
+#about-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#about-btn:hover{
+    background-color: #006400;
+    color: white;
+    border:none;
+}
+@media screen and (max-width:982px){
+    #about p{
+        font-size: 15px;
+    }
+    #about{
+        height: 120vh;
+    }
+}
+/* about section end */
+
+/* top cards start */
+#top-crads{
+    width: 100%;
+    height: 60vh;
+    background: #f7f5f2 ;
+}
+.heading2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.heading2 span{
+    color: #006400;
+}
+#top-cards .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#top-cards .card {
+    width: 100%; 
+    height: 300px; 
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: 0.5s;
+}
+
+#top-cards .card img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+
+#top-cards .card:hover{
+    transform: translate(-10px);
+}
+/* top cards end */
+
+/* menu start */
+#menu{
+    width: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;   
+    
+}
+#container2{
+    margin-top: 50px;
+}
+#menu .card{
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 8px 24px
+}
+.star i{
+    color:black
+}
+#menu h3{
+    text-align: center;
+    color: black;
+    margin-top:10px;
+    font-size: 25px;
+}
+#menu p{
+    font-size: 16px;
+    color:black;
+    padding-top: 10px;
+}
+#menu p span{
+    float: right;
+    cursor: pointer;
+}
+/* menu end */
+
+/* contact start */
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+#contact .container{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(90deg, white 80%,#006400 20%);
+    border-radius: 10px;
+}
+.heading5 span{
+    color: #006400;
+}
+#contact p{
+    font-weight: bold;
+    font-size: 13px;
+    color: #000000;
+}
+#contact input{
+    width: 360px;
+    border: none;
+    border-bottom: 1px solid;
+}
+#contact .form-control {
+    margin-bottom: 20px; 
+}
+
+#contact-btn {    
+    border: none;
+    background: #006400;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    border-radius: 40px;
+    font-size: 20px;
+}
+#col{
+    width: 40%;
+    height: 56vh;
+    background: #000000;
+    margin-top: 100px;
+}
+#contact h1{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#contact #col p{
+    font-size: 15px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 13px;
+}
+@media screen and (max-width:766px){
+    #contact .container{
+        background: white;
+    }
+    #col{
+        width: 100%;
+    }
+    #contact{
+        height: 150vh;
+    }
+}
+@media screen and (max-width:400px){
+    #contact input{
+        width: 250px;
+    }
+}
+/* contact end */
+
+/* footer start */
+#footer img{
+    width: 180px; 
+    height: auto; 
+    border-radius: 100px; 
+}
+#footer{
+    width: 100%;
+    background: #006400;
+    text-align: center;
+}
+.footer-logo img{
+    width: 180px; 
+    height: auto; 
+    border-radius: 100px; 
+    cursor: pointer;
+    margin-top: 30px;
+}
+#footer .social-links i{
+    font-size: 17px;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.credits{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+.credits a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.credits a span{
+    color: #ffffff;
+}
+.copyright span{
+    color: #000000;
+}
+/* footer end */
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-align: end;
+    line-height: 50px;
+}
